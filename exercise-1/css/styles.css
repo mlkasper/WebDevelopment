@@ -1,0 +1,85 @@
+/* CSS Document */
+/* Coded: Michael Kasper */
+
+
+body {
+	
+	width: 1920px;  
+	marign-bottom: 0px;  
+	margin-left: auto; 
+	margin-right: auto; 
+	font-size: calc((26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+main {
+	 margin-top: 0px; 
+}
+header {
+	background: #FFC72A; 
+	padding-bottom: 5px; 
+	border: 2px solid black; 
+
+}
+#top-text {
+	text-align: center; 
+}
+#headertext  {
+	font-family: 'Staatliches', cursive;
+	font-size: 60px;
+	padding-left:60px;
+	margin-right: 45%; 
+	margin-top: 0px;
+	padding-top: 50px;  
+}
+
+.contents {
+	padding-top: 10px; padding-bottom: 50px; 
+	margin: auto; margin-bottom: 0px; 
+	width: 1800px; 
+	font-family: 'Libre Franklin', sans-serif;
+	background: rgb(240,248,255);  
+	border-left: 2px solid black; border-right: 2px solid black; border-bottom: 2px solid black;  
+	
+}
+.contents h2 {
+	text-decoration: underline; 
+	padding-left: 10px; 
+}
+.contents blockquote {
+	font-size: 20px; 
+	font-style: italic; 
+	width: calc(100% - 200px); 
+}
+.contents ul li {
+	
+}
+
+#img-thumbs {
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 50%;  
+	display: block; 
+}
+#img-thumbs img {
+	height: 150px; 
+	padding: 20px; 
+}
+
+nav ul{
+	float: right; 
+	font-family: 'Fira Sans', sans-serif;
+	padding-top: 50px; 
+}
+nav ul li {
+	font-size: 25px; 
+	display:inline; 
+	padding: 20px; 
+	text-transform: uppercase; 
+}
+nav ul li a {
+	text-decoration: none; 
+	color: #5A5A5A;
+}
+nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+	color: black; 
+	border-bottom: 2px solid black; 
+}
