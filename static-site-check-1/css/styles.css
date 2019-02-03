@@ -35,7 +35,7 @@ header h1 {
  
 }
 footer {
-	height: 125px; 
+	height: 100px; 
 	background-color: #333;
 	width: 100%; 
 	left: 0; 
@@ -50,6 +50,7 @@ main {
 
 nav ul {
 	text-align: center;  
+ 
 }
 
 nav ul li {
