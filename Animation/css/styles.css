@@ -1,0 +1,194 @@
+/* CSS Document */
+/* Coded: Michael Kasper */
+
+video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+html {
+  background: url("../img/breakfast-lg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+	height: 100vh;  
+	marign-bottom: 0px;  
+	margin-left: auto; 
+	margin-right: auto; 
+	font-size: 25px;
+}
+main {
+	 margin-top: 0px; 
+}
+header {
+	background: #FFC72A; 
+	padding-bottom: 5px; 
+	border: 2px solid black; 
+	height: 300px; 
+
+}
+#top-text {
+	text-align: center; 
+}
+#headertext  {
+	font-family: 'Staatliches', cursive;
+	font-size: 60px;
+	padding-left:60px;
+	margin-right: 45%; 
+	margin-top: 0px;
+	padding-top: 50px;  
+}
+
+#headerdiv img {
+	
+	padding-left: 150px; 
+}
+.contents {
+	padding-top: 10px; padding-bottom: 50px; 
+	margin: auto; margin-bottom: 0px; 
+	width: 95%; 
+	font-family: 'Libre Franklin', sans-serif;
+	background: rgb(240,248,255);  
+	border-left: 2px solid black; border-right: 2px solid black; border-bottom: 2px solid black;  
+	
+}
+@media (min-width: 40em) {
+  .full-width {
+    width: 100vw;
+    transform: translateX(calc((40em - 100vw)/2));
+	}
+}
+.contents h2 {
+	text-decoration: underline; 
+	padding-left: 10px; 
+}
+.contents blockquote {
+	font-size: 20px; 
+	font-style: italic; 
+	width: calc(100% - 200px); 
+}
+.contents ul li {
+	
+}
+
+#img-thumbs {
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 50%;  
+	display: block; 
+}
+#img-thumbs img {
+	height: 150px; 
+	padding: 20px; 
+}
+
+nav ul{
+	float: right; 
+	font-family: 'Fira Sans', sans-serif;
+	padding-top: 100px; 
+}
+nav ul li {
+	font-size: 25px; 
+	display:inline; 
+	padding: 20px; 
+	text-transform: uppercase; 
+}
+nav ul li a {
+	text-decoration: none; 
+	color: #5A5A5A;
+}
+nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+	color: black; 
+	border-bottom: 2px solid black; 
+}
+.list-img-center {
+position:relative; width:100%; max-width:600px; margin: 0 auto; padding: 20px; text-align:center;
+}
+.most-recent-list-img  {
+	position:relative; 
+	display:inline-block; 
+	width:30%; 
+	max-width:180px; 
+	margin: 0 auto; 
+	padding: 0px 10px 0px 10px;
+	}
+/*Animation*/
+.header-title {
+	animation-delay: 1.2s; 
+}
+.animate-pop-in {
+	animation: pop-in .6s cubic-bezier(0,.93,.37,1.26) forwards;
+	opacity: 0; 
+}
+
+header:after {
+	animation: rotate-up .5s .5s cubic-bezier(0, .5, 0, 1) forwards; 
+}
+
+@keyframes fade-slide-down {
+	0% {
+		opacity: 0; 
+		transform: translate(-4rem); 
+	}
+	100% {
+		opacity: 1; 
+		transform: none; 
+	}
+}
+@keyframes pop-in {
+	0% {
+		opacity: 0; 
+		transform: translateY(-4rem) scale(.8); 
+	}
+	100% {
+		opacity: 1; 
+		transform: none; 
+	}
+}
+@keyframes rotate-up {
+	100% {
+		transform: rotateZ(-4deg); 
+	}
+}
+
+button::after {
+	content: ''; 
+	position: absolute; 
+	top: -50%; 
+	right: -50%; 
+	bottom: -50%; 
+	left: -50%; 
+	background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
+	transform: rotateZ(60deg) translate(-5em, 7.5em); 
+}
+button {
+	background: #e5ac8e; 
+	color: #fff; 
+	font-size: 14px; 
+	border-radius: .5em; 
+	padding: 0 1em; 
+	position: relative; 
+	overflow: hidden; 
+	line-height: 32px; 
+}
+button:hover::after, button:focus::after {
+	animation: sheen 1s forwards; 
+}
+button a { 
+	text-decoration: none; 
+	color: #FFF; 
+}
+
+@keyframes sheen {
+	100% {
+		transform: rotateZ(60deg) translate(1em, -9em); 
+	}
+}
