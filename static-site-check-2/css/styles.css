@@ -1,0 +1,205 @@
+/* CSS Document */
+/* Michael Kasper 2019 */
+* {
+	/*border: dotted 1px red; */
+	margin: 0; 
+	padding: 0; 
+	padding-top: 5px; 
+	box-sizing: border-box; 
+	 
+}
+*:before, *:after {
+	box-sizing: border-box; 
+}
+html, body {
+	min-height: 100%;
+    height: 100%;
+	padding-top: 0px;
+	margin-top: 0px; 
+	position: relative; 
+	background-color: #F7F7F7;
+}
+body {
+	display: flex; 
+	flex-direction: column; 
+	min-height: 100vh; 
+}
+header, footer {
+	flex-shrink: 0; 
+}
+header {
+   	padding-top: 0px; 
+	background-color: #333; 
+	padding-bottom: 0px; 
+	height: 125px; 
+
+}
+header h1 {
+	color: #18B168; 
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 250%; 
+	text-align: center;
+	padding-top: .3em; 
+ 
+}
+footer {
+	height: 100px; 
+	background-color: #333;
+	width: 100%; 
+	left: 0; 
+	bottom: 0; 
+	margin: auto auto 0 auto; 
+}
+main { 
+	overflow: auto;
+	padding-top: 0; 
+
+}
+
+nav ul {
+	text-align: center;  
+ 
+}
+
+nav ul li {
+	display: inline; 
+	padding: 30px;
+	padding-top: 25px; 
+	font-size: 30px; 
+	font-family: 'Fjalla One', sans-serif;
+}
+
+nav ul li a, nav ul li a:visited {
+	text-decoration: none; 
+	color: #376EA6;
+	
+}
+header nav ul li header a:focus, header nav ul li a:hover, nav ul li a:active {
+	padding-bottom: 2px; 
+	border-bottom: 3px solid #18B168; 
+}
+.content {
+	
+}
+
+.item, break {
+	display: inline-block; 
+}
+
+#text {
+	font-family: 'Oswald', sans-serif; 
+	font-size: 20px; 
+	
+}
+.list-images {
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	
+}
+.list-images img {
+	width: 300px; 
+	padding: 50px;
+	border-radius: 75px; 
+}
+.list-images img:hover {
+	opacity: 0.7; 
+}
+
+.flex-container {
+	display: flex; 
+	justify-content: center; 
+	font-family: 'Oswald', sans-serif; 
+}
+.most-recent-list-img {
+	position: relative; 
+	display: inline-block; 
+	float: left; 
+	padding: 10px; 
+	 
+	
+}
+
+.most-recent-list-img:hover {
+	opacity: 0.7; 
+}
+
+.most-recent-list-img img {
+	height: 200px; 
+	padding: 15px; 
+	border-radius: 25px; 
+	
+}
+
+#footer-text {
+	font-size: 25px; 
+	color: white; 
+	font-family: 'Oswald', sans-serif; 
+	text-align: center; 
+	margin-top: 20px; 
+	justify-content: center; 
+}
+
+.placeholder {
+	font-size: 300%;
+	font-family: 'Oswald', sans-serif;
+	text-align: center; 
+	color: white;
+	justify-content: center; 
+}
+
+#list {
+	clear: both;
+	font-size: 20px; 
+	display: flex; 
+	justify-content: center; 
+}
+
+#list ul {
+	font-family: 'Oswald', sans-serif; 
+	float: left; 
+}
+#list ul li {
+	color: black;
+	list-style: none; 
+	padding-bottom: 10px; 
+}
+#list ul li a {
+	text-decoration: none; 
+	color: black; 
+}
+#list ul li a:hover, #list ul li a:focus, #list ul li a:active {
+	text-decoration: underline; 
+	color: #344955; 
+}
+#list ol li {
+	list-style: none; 
+}
+
+#form {
+	background: #f2f2f2; 
+	padding: 20px; 
+	border-radius: 20px; 
+}
+
+input[type=text], input[type=email], textarea {
+	width: 100%; 
+	padding: 12px; 
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px; 
+	resize: vertical; 
+}
+input[type=submit] {
+	background: #4CAF50; 
+	color: white; 
+	padding: 12px 25px; 
+	border: none; 
+	border-radius: 5px; 
+	cursor: pointer; 
+}
+input[type=submit]:hover {
+	background-color: #45a049; 
+}

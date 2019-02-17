@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="css/styles.css" rel="stylesheet" type="text/css"> 
+<!--	<link href="css/normalize.css" rel="stylesheet" type="text/css">-->
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Fjalla+One|Oswald" rel="stylesheet"> <!--Our Fonts-->
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+	<title>Top10 - The Best Top 10 Lists</title>
+</head>
+	
+<body>
+	
+	<header>
+	  <h1>Top 10 - All Your Favorite Lists</h1>
+	  <nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="lists/index.html">Lists</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="submit.html">Submit</a></li>
+			</ul>
+	  </nav>
+		
+	</header>
+	
+	
+<main>
+		<section class="content">
+			<div class="flex-container">
+				<h1>Have an idea for a list? Send us a suggestion!</h1>
+			</div>
+			<br>
+			<div id="form">
+			<form action="cgi-bin/mail.php">
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="firstname" placeholder="Your First Name...">
+				
+				<label for="email">Your Email</label>
+				<input type="email" id="email" name="email" placeholder="Your Email Address...">
+				
+				<label for="content">Your Idea</label>
+				<textarea id="content" name="content" placeholder="Submit you idea for us to review..." style="height: 200px"></textarea>
+				
+				<input type="submit" value="Submit">
+			</form>
+			</div>
+		
+		</section>
+	</main>
+	
+	<footer>
+	  <p id="footer-text">Michael Kasper &copy;2019  Some rights reserved</p>
+	</footer>
+</body>
+</html>
