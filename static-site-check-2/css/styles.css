@@ -1,7 +1,13 @@
 /* CSS Document */
 /* Michael Kasper 2019 */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/AvenirLTStd-Black.woff);
+}
+
+
 * {
-	/*border: dotted 1px red; */
+/*	border: dotted 1px red; */
 	margin: 0; 
 	padding: 0; 
 	padding-top: 5px; 
@@ -40,6 +46,7 @@ header h1 {
 	font-size: 250%; 
 	text-align: center;
 	padding-top: .3em; 
+	text-shadow: 1px 2px 0px #fff, 1px 1px 0px rgba(0,0,0,0.15);
  
 }
 footer {
@@ -85,11 +92,16 @@ header nav ul li header a:focus, header nav ul li a:hover, nav ul li a:active {
 .item, break {
 	display: inline-block; 
 }
+#index-list-header {
+	font-family: 'Avenir', sans-serif;
+	text-align: center; 
+	font-size: 2rem; 
+}
 
 #text {
 	font-family: 'Oswald', sans-serif; 
 	font-size: 20px; 
-	
+
 }
 .list-images {
 	display: flex; 
@@ -104,6 +116,12 @@ header nav ul li header a:focus, header nav ul li a:hover, nav ul li a:active {
 }
 .list-images img:hover {
 	opacity: 0.7; 
+}
+.grow { 
+	transition: transform .3s; 
+}
+.grow:hover { 
+	transform: scale(1.1); 
 }
 
 .flex-container {
@@ -173,8 +191,11 @@ header nav ul li header a:focus, header nav ul li a:hover, nav ul li a:active {
 	color: #344955; 
 }
 #list ol li {
-	list-style: none; 
+	font-family: 'Avenir', sans-serif; 
+	list-style: none;
+	
 }
+
 
 #form {
 	background: #f2f2f2; 
@@ -202,4 +223,62 @@ input[type=submit] {
 }
 input[type=submit]:hover {
 	background-color: #45a049; 
+}
+
+/** Dropdown Nav**/
+
+.dropdown {
+	position: relative; 
+	overflow: hidden; 
+}
+.dropdown:after {
+	content: "\25BC"; 
+	color: white; 
+	font-size: .5em; 
+
+}
+.drop-nav {
+	position: absolute; 
+	display: none; 
+	background: RGBA(51,51,51, .9); 
+	right: 0;  
+}
+.drop-nav li {
+	font-size: 50%; 
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
+	float: right;
+	left: 0;
+	top: 0; 
+
+}
+.drop-nav li:hover {
+	background: RGBA(51, 51, 51, 1); 
+	
+}
+.dropdown:hover > .drop-nav {
+	display: block; 
+	left: 0;
+}
+nav > li {
+	float: left; 
+	border-left: solid 1px black; 
+}
+
+#classes table {
+	left: 0; 
+	width: 98%; 
+	border-collapse: collapse; 
+	font-family: 'Quicksand', sans-serif;
+}
+#classes table th, #classes table td {
+	border: 2px solid black; 
+	padding: .5em; 
+}
+#classes table th {
+	background: #2b5797; 
+	color: white; 
+	letter-spacing: 1px; 
+}
+#classes table td {
+	text-align: center; 
 }
