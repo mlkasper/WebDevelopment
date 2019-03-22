@@ -1,0 +1,150 @@
+/* Custom Styles */
+/* Michael Kasper 2019 */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/AvenirLTStd-Black.woff);
+}
+
+
+* {
+/*	border: dotted 1px red; */
+}
+html, body {
+	min-height: 100%;
+    height: 100%;
+	padding-top: 0px;
+	margin-top: 0px; 
+	position: relative; 
+	background-color: #F7F7F7;
+}
+body {
+	min-height: 100vh; 
+}
+main { 
+	overflow: auto;
+	padding-top: 0; 
+}
+footer {
+	height: 100px; 
+	background-color: #333;
+	width: 100%; 
+	left: 0; 
+	bottom: 0; 
+}
+footer p {
+	padding-top: 20px; 
+}
+#footer-text {
+	font-size: 25px; 
+	color: white; 
+	font-family: 'Oswald', sans-serif; 
+	text-align: center; 
+}
+#text {
+	font-family: 'Oswald', sans-serif; 
+	font-size: 20px; 
+
+}
+.list-images {
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	
+}
+.list-images img {
+	width: 300px; 
+	padding: 50px;
+	border-radius: 75px; 
+}
+.list-images img:hover {
+	opacity: 0.7; 
+}
+/* animation */
+.grow { 
+	transition: transform .3s; 
+}
+.grow:hover { 
+	transform: scale(1.1); 
+}
+
+
+.placeholder {
+	font-size: 300%;
+	font-family: 'Oswald', sans-serif;
+	text-align: center; 
+	color: white;
+	justify-content: center; 
+}
+
+
+#form {
+	background: #f2f2f2; 
+	padding: 20px; 
+	border-radius: 20px; 
+}
+
+input[type=text], input[type=email], textarea {
+	width: 100%; 
+	padding: 12px; 
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px; 
+	resize: vertical; 
+}
+input[type=submit] {
+	background: #333; 
+	color: white; 
+	padding: 12px 25px; 
+	border: none; 
+	border-radius: 5px; 
+	cursor: pointer; 
+}
+input[type=submit]:hover {
+	background-color: #262626; 
+}
+
+.recently-added {
+	font-size: 1.5em; 
+	text-align: center; 
+	font-family: "Helvetica Neue", Helvetica, sans-serif; 
+}
+
+.divider-left {
+	border-left: 1.5px solid #eaeaea; 
+	height: 100vh; 
+}
+.diver-right {
+	border-right: 1.5px solid #eaeaea; 
+}
+.button-color {
+	background-color: #333; 
+}
+.button-color:hover {
+	background-color: #262626; 
+}
+
+
+
+
+/* NO LONGER USED
+#classes table { 
+	width: 98%; 
+	border-collapse: collapse; 
+	font-family: 'Quicksand', sans-serif;
+}
+#classes table th, #classes table td {
+	border: 2px solid black; 
+	padding: .5em; 
+}
+#classes table th {
+	background: #2b5797; 
+	color: white; 
+	letter-spacing: 1px; 
+}
+#classes table td {
+	text-align: center; 
+}
+
+*/
